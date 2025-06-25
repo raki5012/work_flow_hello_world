@@ -2,7 +2,7 @@ name: print-name
 on:
   push:
     branches: [ main ]
-job:
+jobs:
   builds:
     runs-on: ubuntu-latest
     steps:
