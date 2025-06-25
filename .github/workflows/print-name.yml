@@ -1,2 +1,14 @@
-
+name: print-name
+  on:
+    push:
+      branches: [ main ]
+ job:
+   builds:
+     runs-on: ubuntu-latest
+     steps:
+       - name: check out
+         uses:  actions/checkout@v4
+       - name: Hellow World
+         run: echo "Hellow World"
+ 
 
